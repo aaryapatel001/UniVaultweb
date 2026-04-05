@@ -8,6 +8,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
+
+    <!-- Add this BEFORE your admin panel script -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = 'https://YOUR-PROJECT.supabase.co';  // ← Replace
+  const SUPABASE_KEY = 'YOUR-ANON-KEY-HERE';               // ← Replace
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+</script>
     <style>
         :root {
             --bg: #060a12;
